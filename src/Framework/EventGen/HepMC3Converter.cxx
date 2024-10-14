@@ -791,7 +791,7 @@ void genie::HepMC3Converter::PrepareRunInfo( const genie::EventRecord* gevrec )
     std::make_shared< HepMC3::VectorIntAttribute >(vertex_IDs) );
 
   // G.R.6
-  std::set< int > particle_statuses = { 4, 11 };
+  std::set< int > particle_statuses = { 4, 20 };
 
   fRunInfo->add_attribute( "NuHepMC.ParticleStatusInfo[4].Name",
     std::make_shared< HepMC3::StringAttribute >("Beam") );
@@ -799,10 +799,10 @@ void genie::HepMC3Converter::PrepareRunInfo( const genie::EventRecord* gevrec )
   fRunInfo->add_attribute( "NuHepMC.ParticleStatusInfo[4].Description",
     std::make_shared< HepMC3::StringAttribute >("Incoming beam particle") );
 
-  fRunInfo->add_attribute( "NuHepMC.ParticleStatusInfo[11].Name",
+  fRunInfo->add_attribute( "NuHepMC.ParticleStatusInfo[20].Name",
     std::make_shared< HepMC3::StringAttribute >("Target") );
 
-  fRunInfo->add_attribute( "NuHepMC.ParticleStatusInfo[11].Description",
+  fRunInfo->add_attribute( "NuHepMC.ParticleStatusInfo[20].Description",
     std::make_shared< HepMC3::StringAttribute >("Target particle") );
 
   for ( const auto& pstatus_pair : NUHEPMC_PARTICLE_STATUS_MAP ) {
