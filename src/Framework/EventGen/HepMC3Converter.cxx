@@ -102,18 +102,22 @@ namespace {
     { { SType::kScDeepInelastic, IType::kIntWeakCC }, 600 }, // DIS-CC
     { { SType::kScSingleKaon, IType::kIntWeakCC }, 601 }, // DIS-SINGLEK-CC
     { { SType::kScDeepInelastic, IType::kIntWeakNC }, 650 }, // DIS-NC
+    { { SType::kScDeepInelastic, IType::kIntEM }, 670 }, // DIS-EM
     { { SType::kScInverseMuDecay, IType::kIntWeakCC }, 701 }, // IMD
     { { SType::kScIMDAnnihilation, IType::kIntWeakCC }, 702 }, // IMD-ANH
     { { SType::kScMEC, IType::kIntWeakCC }, 300 }, // MEC-CC
     { { SType::kScMEC, IType::kIntWeakNC }, 350 }, // MEC-NC
+    { { SType::kScMEC, IType::kIntEM }, 370 }, // MEC-EM
     { { SType::kScNull, IType::kIntNOsc }, 900 }, // NNBarOsc
     { { SType::kScNuElectronElastic, IType::kIntWeakMix }, 703 }, // NUE-EL
     { { SType::kScNuElectronElastic, IType::kIntWeakNC }, 703 }, // NUE-EL
     { { SType::kScNull, IType::kIntNDecay }, 901 }, // NucleonDecay
     { { SType::kScQuasiElastic, IType::kIntWeakCC }, 200 }, // QEL-CC
     { { SType::kScQuasiElastic, IType::kIntWeakNC }, 250 }, // QEL-NC
+    { { SType::kScQuasiElastic, IType::kIntEM }, 270 }, // QEL-EM
     { { SType::kScResonant, IType::kIntWeakCC }, 400 }, // RES-CC
     { { SType::kScResonant, IType::kIntWeakNC }, 450 }, // RES-NC
+    { { SType::kScResonant, IType::kIntEM }, 470 }, // RES-EM
   };
 
   // P.R.1
